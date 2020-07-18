@@ -1,4 +1,4 @@
-package base;
+package base.constructor;
 
 import java.util.Random;
 
