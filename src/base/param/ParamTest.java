@@ -1,6 +1,4 @@
-package base;
-
-import javax.sound.midi.Soundbank;
+package base.param;
 
 /**
  * @author wsh
