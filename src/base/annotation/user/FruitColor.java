@@ -23,8 +23,6 @@ public @interface FruitColor {
         GREEN
     }
 
-    ;
-
     /**
      * 颜色属性
      */
