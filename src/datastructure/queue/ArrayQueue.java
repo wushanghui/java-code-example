@@ -10,11 +10,11 @@ public class ArrayQueue {
      */
     private int maxSize;
     /**
-     * 队列头
+     * 队列头，指向队列头部，它是指向队列头的前一个位置
      */
     private int front;
     /**
-     * 队列尾
+     * 队列尾，指向队列尾部，指向队列尾的数据，即就是队列最后一个数据
      */
     private int rear;
     /**
@@ -25,10 +25,10 @@ public class ArrayQueue {
     public ArrayQueue(int maxSize) {
         this.maxSize = maxSize;
         array = new int[maxSize];
-        // 指向队列头部，它是指向队列头的前一个位置
-        front = -1;
-        // 指向队列尾部，指向队列尾的数据，即就是队列最后一个数据
-        rear = -1;
+//        //
+//        front = -1;
+//        //
+//        rear = -1;
     }
 
     /**
@@ -75,8 +75,8 @@ public class ArrayQueue {
         if (isEmpty()) {
             System.out.println("队列为空！");
         } else {
-            for (int i = 0; i < array.length; i++) {
-                System.out.printf("array[%d]=%d\n", i, array[i]);
+            for (int i = front; i < rear; i++) {
+                System.out.printf("array[%d]=%d\n", i + 1, array[i + 1]);
             }
         }
     }
