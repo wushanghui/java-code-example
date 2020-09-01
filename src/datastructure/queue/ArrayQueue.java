@@ -25,10 +25,8 @@ public class ArrayQueue {
     public ArrayQueue(int maxSize) {
         this.maxSize = maxSize;
         array = new int[maxSize];
-//        //
-//        front = -1;
-//        //
-//        rear = -1;
+        front = -1;
+        rear = -1;
     }
 
     /**
