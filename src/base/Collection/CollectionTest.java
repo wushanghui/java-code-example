@@ -1,6 +1,5 @@
-package base.Collection;
+package base.collection;
 
-import java.util.Collection;
 
 /**
  * @author wsh
