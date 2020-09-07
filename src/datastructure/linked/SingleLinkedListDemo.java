@@ -1,6 +1,6 @@
 package datastructure.linked;
 
-import java.util.List;
+import java.util.Stack;
 
 /**
  * @author wsh
@@ -36,6 +36,10 @@ public class SingleLinkedListDemo {
         singleLinkedList.list();
         System.out.println("reverse");
         SingleLinkedList.reverse(singleLinkedList.getHead());
+        singleLinkedList.list();
+        System.out.println("逆向打印");
+        SingleLinkedList.reversePrint(singleLinkedList.getHead());
+        System.out.println();
         singleLinkedList.list();
         // 3、测试修改
 //        singleLinkedList.update(new Node(3, "第三个节点~~"));
@@ -213,7 +217,8 @@ class SingleLinkedList {
 
     /**
      * 查找单链表中的倒数第 k 个结点
-     * @param head 头节点
+     *
+     * @param head  头节点
      * @param index 倒第几个
      * @return 倒第 几个 节点
      */
@@ -260,6 +265,34 @@ class SingleLinkedList {
         // 最终实现单链表的反转
         head.next = reverseHead.next;
         return head;
+    }
+
+    /**
+     * 从尾到头打印单链表，使用栈（Stack）先进后出
+     */
+    public static void reversePrint(Node head) {
+        if (head.next == null) {
+            return;
+        }
+        // 创建一个栈
+        Stack<Node> stack = new Stack<>();
+        Node cur = head.next;
+        // 将节点压入栈中
+        while (cur != null) {
+            stack.push(cur);
+            cur = cur.next;
+        }
+        // 将栈中的节点进行出栈打印
+        while (stack.size() > 0) {
+            System.out.println(stack.pop());
+        }
+    }
+
+    /**
+     *  合并两个有序的单链表
+     */
+    public static void merge(Node head1, Node head2) {
+
     }
 
 }
