@@ -34,8 +34,8 @@ public class Labyrinth {
             System.out.println();
         }
         // 使用递归回溯给小球找路
-        //setWay(data, 1,1);
-        setWay2(data, 1,1);
+        setWay(data, 1,1);
+        //setWay2(data, 1,1);
         System.out.println("走过的 迷宫地图：");
         for (int[] datum : data) {
             for (int i : datum) {

@@ -10,7 +10,7 @@ import java.io.PipedReader;
 public class Queue8 {
 
     private int max = 8;
-
+    // 定义数组 array, 保存皇后放置位置的结果,比如 arr = {0 , 4, 7, 5, 2, 6, 1, 3}
     private int[] array = new int[max];
 
     private static int count = 0;
@@ -25,6 +25,8 @@ public class Queue8 {
     }
 
     /**
+     * 放第 n 个皇后
+     * check 是 每一次递归时，进入到 check 中都有 for(int i = 0; i < max; i++)，因此会有回溯
      * @param n
      */
     private void check(int n) {
@@ -49,6 +51,11 @@ public class Queue8 {
      */
     private boolean judge(int n) {
         judgeCount++;
+        /*
+            array[i] == array[n] 表示判断 第 n 个皇后是否和前面的 n-1 个皇后在同一列
+            Math.abs(n-i) == Math.abs(array[n] - array[i]) 表示判断第 n 个皇后是否和第 i 皇后是否在同一斜线
+            判断是否在同一行, 没有必要，n 每次都在递增
+        */
         for (int i = 0; i < n; i++) {
             if (array[i] == array[n] || Math.abs(n - i) == Math.abs(array[n] - array[i])) {
                 return false;
