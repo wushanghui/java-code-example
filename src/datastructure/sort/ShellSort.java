@@ -9,7 +9,60 @@ import java.util.Arrays;
 public class ShellSort {
 
     public static void main(String[] args) {
-        sort();
+//        sort();
+        int[] arr = {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
+//        sort(arr);
+        sort2(arr);
+    }
+
+    /**
+     * 希尔排序-交换法
+     * @param arr array
+     */
+    private static void sort(int[] arr) {
+        System.out.println(Arrays.toString(arr));
+        int temp = 0;
+        // 先分组，gap是多少组
+        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < arr.length; i++) {
+                // 遍历各组中所有元素，共gap组，步长也是gap
+                for (int j = i - gap; j >= 0; j -= gap) {
+                    // 如果当前元素大于加上步长后的元素，就交换位置
+                    if (arr[j] > arr[j + gap]) {
+                        temp = arr[j];
+                        arr[j] = arr[j + gap];
+                        arr[j + gap] = temp;
+                    }
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    /**
+     * 希尔排序-移位法
+     * @param arr array
+     */
+    private static void sort2(int[] arr) {
+        System.out.println(Arrays.toString(arr));
+        // 先分组，gap是多少组
+        for (int gap = arr.length / 2; gap > 0; gap /= 2) {
+            // 从第gap个元素，逐个对其所在的组进行直接插入排序
+            for (int i = gap; i < arr.length;i++) {
+                int j = i;
+                int temp = arr[j];
+                if (arr[j] < arr[j - gap]) {
+                    while (j - gap >= 0 && temp < arr[j - gap]) {
+                        // 移动
+                        arr[j] = arr[j - gap];
+                        j -= gap;
+                    }
+                    // 退出while后，就给temp找到插入的位置
+                    arr[j] = temp;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void sort() {
