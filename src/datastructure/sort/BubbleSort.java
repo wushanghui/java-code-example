@@ -13,12 +13,12 @@ public class BubbleSort {
     static int count = 0;
 
     public static void main(String[] args) {
-        sort();
+//        sort();
         //System.out.println("--------");
-//        int[] arr = {3, 9, -1, 10, 20};
-//        System.out.println("排序前的数组：");
-//        System.out.println(Arrays.toString(arr));
-//        bubbleSortPlus(arr);
+        int[] arr = {3, 9, -1, 10, 20};
+        System.out.println("排序前的数组：");
+        System.out.println(Arrays.toString(arr));
+        bubbleSortPlus(arr);
 //        System.out.println("--------");
 
 

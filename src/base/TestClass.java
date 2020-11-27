@@ -44,7 +44,11 @@ public class TestClass {
     }
     @Test
     public void test2() {
-
+        String str = "a,b";
+        String[] split = str.split(",");
+        for (String s : split) {
+            System.out.println(s);
+        }
 
     }
 
