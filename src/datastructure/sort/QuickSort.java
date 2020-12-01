@@ -10,12 +10,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        String str = "11";
-        String[] split = str.split("_");
-        System.out.println(split[0]);
-        System.out.println(split.length);
-        System.out.println(str);
-        int[] arr = {-9, 78, 0, 23, -567, 70, -1, 900, 4561};
+        int[] arr = {2, 10, 8, 22, 34, 5, 12, 28, 21, 11};
         System.out.println(Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
@@ -64,20 +59,20 @@ public class QuickSort {
             }
         }
 
-//        if (l == r) {
-//            l += 1;
-//            r -= 1;
-//        }
-//
-//        // 向左递归
-//        if (left < r) {
-//            quickSort(arr, left, r);
-//        }
-//
-//        // 向右递归
-//        if (right > l) {
-//            quickSort(arr, l, right);
-//        }
+        if (l == r) {
+            l += 1;
+            r -= 1;
+        }
+
+        // 向左递归
+        if (left < r) {
+            quickSort(arr, left, r);
+        }
+
+        // 向右递归
+        if (right > l) {
+            quickSort(arr, l, right);
+        }
 
     }
 }
