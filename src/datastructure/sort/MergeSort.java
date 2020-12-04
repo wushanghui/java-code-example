@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author wsh
  * @date 2020/12/1 17:17
  */
-public class MergetSort {
+public class MergeSort {
 
 
     public static void main(String[] args) {
