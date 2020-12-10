@@ -77,7 +77,7 @@ public class BinarySearch {
                 temp -= 1;
             }
 
-            indexList.add(temp);
+            indexList.add(mid);
 
             // 再向右扫描
             temp = mid + 1;
