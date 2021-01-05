@@ -88,6 +88,30 @@ class BinaryTree {
         }
         return null;
     }
+
+    /**
+     * 中序查找
+     * @param no id
+     * @return 查找到节点
+     */
+    public Node infixOrderSearch(int no) {
+        if (this.root != null) {
+            return this.root.infixOrderSearch(no);
+        }
+        return null;
+    }
+
+    /**
+     * h后序查找
+     * @param no id
+     * @return 查找到节点
+     */
+    public Node postfixOrderSearch(int no) {
+        if (this.root != null) {
+            return this.root.postfixOrderSearch(no);
+        }
+        return null;
+    }
 }
 
 /**
@@ -185,6 +209,14 @@ class Node {
     }
 
     public Node prefixOrderSearch(int no) {
+        return null;
+    }
+
+    public Node infixOrderSearch(int no) {
+        return null;
+    }
+
+    public Node postfixOrderSearch(int no) {
         return null;
     }
 }

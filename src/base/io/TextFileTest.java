@@ -62,40 +62,40 @@ public class TextFileTest {
     }
 
     private static void writeEmployee(PrintWriter out, Employee e) {
-        out.println(e.getName() + "|" + e.getSalary() + "|" + e.getBirth());
+        out.println(e.getName() + "|" + e.getSalary() + "|" + e.getHireDay());
     }
 }
 
-class Employee {
-
-    private String name;
-    private double salary;
-    private LocalDate birth;
-
-    public Employee(String name, double salary, int year, int month, int day) {
-        this.name = name;
-        this.salary = salary;
-        this.birth = LocalDate.of(year, month, day);
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public LocalDate getBirth() {
-        return birth;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                ", birth=" + birth +
-                '}';
-    }
-}
+//class Employee {
+//
+//    private String name;
+//    private double salary;
+//    private LocalDate birth;
+//
+//    public Employee(String name, double salary, int year, int month, int day) {
+//        this.name = name;
+//        this.salary = salary;
+//        this.birth = LocalDate.of(year, month, day);
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public double getSalary() {
+//        return salary;
+//    }
+//
+//    public LocalDate getBirth() {
+//        return birth;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Employee{" +
+//                "name='" + name + '\'' +
+//                ", salary=" + salary +
+//                ", birth=" + birth +
+//                '}';
+//    }
+//}
