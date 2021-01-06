@@ -17,7 +17,7 @@ public class DataIO {
         System.out.println(s.charAt(1)+"-"+(int)s.charAt(1));
         System.out.println(s.charAt(2)+"-"+(int)s.charAt(2));
         char ch = 0;
-        System.out.println(ch);
+        System.out.println(ch+"-"+(int)ch);
 
     }
 
