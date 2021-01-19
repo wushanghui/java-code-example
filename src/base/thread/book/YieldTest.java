@@ -20,7 +20,7 @@ public class YieldTest implements Runnable {
                 System.out.println(Thread.currentThread() + " yield cpu...");
 
                 // 当前线程让出CPU执行权，放弃时间片，进行下一轮调度
-                // Thread.yield();
+                 Thread.yield();
             }
         }
         System.out.println(Thread.currentThread() + " is over!");
