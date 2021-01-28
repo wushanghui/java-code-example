@@ -1,7 +1,5 @@
 package base.thread.book;
 
-import sun.lwawt.macosx.CSystemTray;
-
 /**
  * @author wsh
  * @date 2021/1/25 2:51 下午
