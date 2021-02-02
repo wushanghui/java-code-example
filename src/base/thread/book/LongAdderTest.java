@@ -1,18 +1,15 @@
 package base.thread.book;
 
-import java.util.concurrent.atomic.AtomicLong;
+
+import java.util.concurrent.atomic.LongAdder;
 
 /**
- * @author jue
- * @date 2021/1/28 22:06
- * @describe
+ * @author wsh
+ * @date 2021/2/1 10:26
  */
-public class AtomicLongTest {
+public class LongAdderTest {
 
-    /**
-     * 原子计数器
-     */
-    private static AtomicLong atomicLong = new AtomicLong();
+    private static LongAdder longAdder = new LongAdder();
 
     /**
      * 数据源
@@ -28,7 +25,7 @@ public class AtomicLongTest {
                 int size = arrayOne.length;
                 for (int i = 0; i < size; i++) {
                     if (arrayOne[i].intValue() == 0) {
-                        atomicLong.incrementAndGet();
+                        longAdder.increment();
                     }
                 }
             }
@@ -41,7 +38,7 @@ public class AtomicLongTest {
                 int size = arrayTwo.length;
                 for (int i = 0; i < size; i++) {
                     if (arrayTwo[i].intValue() == 0) {
-                        atomicLong.incrementAndGet();
+                        longAdder.increment();
                     }
                 }
             }
@@ -53,6 +50,6 @@ public class AtomicLongTest {
         threadOne.join();
         threadTwo.join();
 
-        System.out.println("count 0: " + atomicLong.get());
+        System.out.println("count 0: " + longAdder);
     }
 }
