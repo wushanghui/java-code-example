@@ -16,17 +16,25 @@ public class TestProductorAndConsumerForLock {
         Consumer con = new Consumer(clerk);
 
         new Thread(pro, "生产者 A").start();
-        new Thread(con, "消费者 B").start();
-
-		 new Thread(pro, "生产者 C").start();
-		 new Thread(con, "消费者 D").start();
+        new Thread(pro, "生产者 B").start();
+        new Thread(con, "消费者 C").start();
+        new Thread(con, "消费者 D").start();
     }
 
 }
 
+/**
+ * 店员
+ */
 class Clerk {
+    /**
+     * 产品
+     */
     private int product = 0;
 
+    /**
+     * 独占锁
+     */
     private Lock lock = new ReentrantLock();
     private Condition condition = lock.newCondition();
 
@@ -83,7 +91,9 @@ class Clerk {
     }
 }
 
-// 生产者
+/**
+ * 生产者
+ */
 class Productor implements Runnable {
 
     private Clerk clerk;
@@ -94,19 +104,21 @@ class Productor implements Runnable {
 
     @Override
     public void run() {
+        // 生产者生产20个产品
         for (int i = 0; i < 20; i++) {
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
             clerk.get();
         }
     }
 }
 
-// 消费者
+/**
+ * 消费者
+ */
 class Consumer implements Runnable {
 
     private Clerk clerk;
@@ -117,6 +129,7 @@ class Consumer implements Runnable {
 
     @Override
     public void run() {
+        // 消费者消费20个产品
         for (int i = 0; i < 20; i++) {
             clerk.sale();
         }

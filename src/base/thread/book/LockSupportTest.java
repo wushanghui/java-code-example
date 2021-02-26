@@ -9,6 +9,7 @@ import java.util.concurrent.locks.LockSupport;
 public class LockSupportTest {
 
     public static void main(String[] args) {
+        System.out.println(LockSupport.class.getName());
         System.out.println("start park!");
         // 默认是没有许可证的
         LockSupport.park();
