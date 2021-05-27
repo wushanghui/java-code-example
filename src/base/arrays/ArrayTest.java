@@ -2,8 +2,10 @@ package base.arrays;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -50,6 +52,32 @@ public class ArrayTest {
         System.out.println(myList.get(1));//报错：ArrayIndexOutOfBoundsException
         int [] array=(int[]) myList.get(0);
         System.out.println(array[0]);//1
+    }
+
+    @Test
+    public void test2() {
+        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4));
+        System.out.println(list);
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            Integer next = iterator.next();
+            if (next.equals(2)) {
+                iterator.remove();
+            }
+        }
+        System.out.println(list);
+    }
+
+    @Test
+    public void test3() {
+        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4));
+        System.out.println(list);
+        for (Integer integer : list) {
+            if (integer.equals(2)) {
+                list.remove(integer);
+            }
+        }
+        System.out.println(list);
     }
 
 
