@@ -5,7 +5,7 @@ package base.abstractClasses;
  * @version 1.0.0
  * @date 2019/11/14 15:16
  */
-public class Employee extends Person{
+public class Employee extends Person {
 
 
     private String empId;
