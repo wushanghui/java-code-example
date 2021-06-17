@@ -11,8 +11,5 @@ public class CollectionTest {
 //        Collection
         new Thread();
 
-
-
-
     }
 }
