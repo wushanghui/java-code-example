@@ -1,9 +1,5 @@
 package base.enums;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-import java.util.Scanner;
-
 /**
  * @author wsh
  * @date 2019/11/15 10:06
