@@ -11,10 +11,11 @@ public class CloneTest {
             Employee original = new Employee("Jerry", 3000);
             original.setHireDay(1995, 1,1);
             Employee copy = original.clone();
-            copy.raiseSalary(10);
-            copy.setHireDay(2000, 2,2);
+//            copy.raiseSalary(10);
+//            copy.setHireDay(2000, 2,2);
             System.out.println("original=" + original);
             System.out.println("copy=" + copy);
+            System.out.println(original==copy);
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

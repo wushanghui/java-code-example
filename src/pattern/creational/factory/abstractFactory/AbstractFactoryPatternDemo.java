@@ -3,6 +3,8 @@ package pattern.creational.factory.abstractFactory;
 import pattern.creational.factory.Shape;
 
 /**
+ * 测试类
+ *
  * @author 吴尚慧
  * @since 2022/6/13 11:49
  */

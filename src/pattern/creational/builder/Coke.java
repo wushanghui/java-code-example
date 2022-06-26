@@ -6,7 +6,7 @@ package pattern.creational.builder;
  * @author 吴尚慧
  * @since 2022/6/9 15:55
  */
-public class Coke extends ColdDrink{
+public class Coke extends ColdDrink {
 
     @Override
     public String name() {

@@ -1,6 +1,8 @@
 package pattern.creational.builder;
 
 /**
+ * 套餐创建者
+ *
  * @author 吴尚慧
  * @since 2022/6/9 16:02
  */

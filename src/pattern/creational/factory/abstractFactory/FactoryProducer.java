@@ -1,6 +1,8 @@
 package pattern.creational.factory.abstractFactory;
 
 /**
+ * 工厂生成器
+ *
  * @author 吴尚慧
  * @since 2022/6/13 11:48
  */

@@ -6,7 +6,7 @@ package pattern.creational.builder;
  * @author 吴尚慧
  * @since 2022/6/9 15:53
  */
-public class ChickenBurger extends Burger{
+public class ChickenBurger extends Burger {
     @Override
     public String name() {
         return "鸡肉汉堡";
