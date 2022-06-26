@@ -1,4 +1,4 @@
-package pattern.structural.criteria;
+package pattern.structural.filter;
 
 /**
  * 人

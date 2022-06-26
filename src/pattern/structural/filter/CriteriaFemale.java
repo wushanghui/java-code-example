@@ -1,4 +1,4 @@
-package pattern.structural.criteria;
+package pattern.structural.filter;
 
 import java.util.ArrayList;
 import java.util.List;
