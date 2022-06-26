@@ -1,6 +1,8 @@
 package pattern.structural.adapter;
 
 /**
+ * Mp4 播放器
+ *
  * @author 吴尚慧
  * @since 2022/6/21 11:44
  */

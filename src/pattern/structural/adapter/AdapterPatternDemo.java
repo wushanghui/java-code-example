@@ -7,6 +7,7 @@ package pattern.structural.adapter;
  * @since 2022/6/21 11:46
  */
 public class AdapterPatternDemo {
+
     public static void main(String[] args) {
         AudioPlayer audioPlayer = new AudioPlayer();
 
