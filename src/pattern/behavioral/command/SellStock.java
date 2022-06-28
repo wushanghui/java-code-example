@@ -1,4 +1,4 @@
-package pattern.command;
+package pattern.behavioral.command;
 
 /**
  * 命令
@@ -6,7 +6,7 @@ package pattern.command;
  * @author 吴尚慧
  * @since 2022/1/5 17:04
  */
-public class SellStock implements Order{
+public class SellStock implements Order {
 
     private Stock abcStock;
 

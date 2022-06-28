@@ -1,4 +1,4 @@
-package pattern.command;
+package pattern.behavioral.command;
 
 /**
  * Command

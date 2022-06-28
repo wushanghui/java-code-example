@@ -1,4 +1,4 @@
-package pattern.chainOfResponsibility;
+package pattern.behavioral.responsibilityChain;
 
 public abstract class AbstractLogger {
 

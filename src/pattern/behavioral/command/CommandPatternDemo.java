@@ -1,4 +1,4 @@
-package pattern.command;
+package pattern.behavioral.command;
 
 /**
  * @author 吴尚慧
