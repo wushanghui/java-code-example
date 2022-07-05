@@ -1,8 +1,8 @@
 package pattern.behavioral.iterator;
 
-import java.util.Arrays;
-
 /**
+ * 迭代器模式
+ *
  * @author 吴尚慧
  * @since 2022/6/30 11:28
  */

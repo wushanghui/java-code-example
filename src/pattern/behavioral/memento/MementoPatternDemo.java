@@ -1,6 +1,9 @@
 package pattern.behavioral.memento;
 
 /**
+ * 备忘录模式
+ * 备忘录模式（Memento Pattern）保存一个对象的某个状态，以便在适当的时候恢复对象。备忘录模式属于行为型模式。
+ *
  * @author 吴尚慧
  * @since 2022/6/30 16:24
  */

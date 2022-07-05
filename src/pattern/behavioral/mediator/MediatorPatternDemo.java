@@ -1,6 +1,8 @@
 package pattern.behavioral.mediator;
 
 /**
+ * 中介者模式
+ *
  * @author 吴尚慧
  * @since 2022/6/30 16:19
  */

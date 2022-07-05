@@ -1,7 +1,8 @@
 package pattern.behavioral.observer;
 
 /**
- * 观察者测试类
+ * 观察者模式
+ * 当对象间存在一对多关系时，则使用观察者模式（Observer Pattern）。比如，当一个对象被修改时，则会自动通知依赖它的对象。观察者模式属于行为型模式。
  *
  * @author 吴尚慧
  * @since 2022/6/30 18:57

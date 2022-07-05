@@ -1,6 +1,8 @@
 package pattern.behavioral.interpreter;
 
 /**
+ * 解释器模式
+ *
  * @author 吴尚慧
  * @since 2022/6/30 10:51
  */
