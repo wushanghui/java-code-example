@@ -1,9 +1,7 @@
 package pattern.behavioral.command;
 
 /**
- * 库存(接受者)
- * Receiver
- * 接收者，真正执行命令的对象。任何类都可能成为一个接收者，只要它能够实现命令要求实现的相应功能。
+ * 股票
  *
  * @author 吴尚慧
  * @since 2022/1/5 16:59
@@ -11,6 +9,7 @@ package pattern.behavioral.command;
 public class Stock {
 
     private String name = "ABC";
+
     /**
      * 数量
      */
