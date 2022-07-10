@@ -1,7 +1,7 @@
 package pattern.behavioral.command;
 
 /**
- * 命令
+ * 售卖股票
  *
  * @author 吴尚慧
  * @since 2022/1/5 17:04
